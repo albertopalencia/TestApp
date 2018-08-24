@@ -1,0 +1,2043 @@
+﻿/*******************************************************/
+
+/*INICIO SELECT2.CS*/
+
+/*******************************************************/
+
+.select2-offscreen, .select2-offscreen:focus {
+    left: 50% !important;
+}
+
+.select2-container-active .select2-choice,
+.select2-container-active .select2-choices,
+.select2-drop-active {
+    border: 1px solid #d5d5d5;    
+   
+    -webkit-box-shadow: 0 0 0 transparent !important;
+        box-shadow: 0 0 0 transparent !important;   
+}
+
+.select2-container .select2-choice, .select2-container-active.select2-dropdown-open .select2-choice {
+    background-image: none;
+}
+
+.select2-dropdown-open .select2-choice {
+    background-color: #ffffff;
+}
+
+.select2-container .select2-choice, .select2-drop {
+    color: #858585;
+}
+
+.select2-container .select2-choice {
+    border: 1px solid #d5d5d5;
+    border-radius: 0 !important;
+    height: 26px !important;
+    font-size: 11px !important;
+    overflow: inherit !important;
+}
+
+.select2-container{
+    margin-bottom: -4px !important;
+    width: 100% !important;
+}
+
+    .select2-container .select2-choice .select2-arrow {
+        background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+        border-left: medium none !important;
+    }
+
+.select2-results .select2-highlighted {
+    background: #4f99c6 none repeat scroll 0 0;
+}
+
+.select2-arrow
+{
+    margin-top: -2px !important;
+}
+
+.select2-drop.select2-drop-above.select2-drop-active {
+    border-top: 1px solid #d5d5d5 !important;
+}
+
+.select2-dropdown-open.select2-drop-above .select2-choice, .select2-dropdown-open.select2-drop-above .select2-choices {
+    border-color: transparent #d5d5d5 #d5d5d5 !important;
+}
+
+.select2-dropdown-open .select2-choice .select2-arrow b {
+    background-position: -17.5px 1px !important;
+}
+
+.select-text.has-error {
+    border-color: #a94442;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    border:1px solid #a94442;
+}
+
+.select-text.has-error:focus {
+    border-color: #843534;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+}
+
+.no-search .select2-search {
+    display:none
+}
+
+.select-text.has-error div > a{
+    border: none !important;
+}
+
+/*******************************************************/
+
+/*FIN SELECT2.CS*/
+
+/*******************************************************/
+
+/*******************************************************/
+
+/*INICIO BOOTSTRAP.CS*/
+
+/*******************************************************/
+
+.bootbox-confirm {
+  text-align: center;
+}
+
+.bootbox-confirm:before {
+  display: inline-block;
+  vertical-align: middle;
+  content: " ";
+  height: 100%;
+}
+
+.bootbox-confirm .modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.datepicker, .bootstrap-timepicker-widget {
+    z-index: 9999 !important;
+}
+
+.cursor-pointer{
+    cursor:pointer;
+}
+
+.k-button {
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+.widget-main {
+    padding-bottom: 5px !important;
+    padding-top: 5px !important;
+}
+
+.form-control {
+    font-size: 11px !important;
+}
+
+input[type="text"], select, input[type="password"] {
+    height: 26px !important;
+}
+
+.input-group-addon {
+    font-size: 11px !important;
+}
+
+/*label
+{
+    margin-bottom: -1px !important;
+}*/
+
+.widget-header {
+    min-height: 28px !important;
+}
+
+.widget-toolbar {
+    line-height: 27px;
+}
+
+.widget-header > .widget-title {
+    line-height: 29px;
+}
+
+html body .RadInput_Web20 .riDisabled, html body .RadInput_Disabled_Web20 {
+    border-color: #d5d5d5 !important;
+}
+
+.k-widget.k-grid .tooltip {
+    position: fixed !important;
+}
+
+*:focus {
+    outline: 0 !important;
+}
+
+.no-margin-top{
+    margin-top: 0 !important;
+}
+
+/*******************************************************/
+
+/*FIN BOOTSTRAP.CS*/
+
+/*******************************************************/
+
+/*******************************************************/
+
+/*INICIO ACE.MIN.CS*/
+
+/*******************************************************/
+
+.widget-toolbar a {
+    padding-right: 10px !important;
+}
+
+.checkbox label{
+    padding-left: 0 !important;
+}
+
+.input-icon > .ace-icon {
+    top: -1px;
+}
+
+body {
+    font-size: 11px; /*font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;*/
+}
+
+.page-header h1 {
+    font-size: 22px !important;
+}
+
+
+    .page-header h1 small {
+        font-size: 12px !important;
+    }
+
+
+h1 {
+    font-size: 30px !important;
+}
+
+
+    h1.smaller {
+        font-size: 29px !important;
+    }
+
+
+    h1.bigger {
+        font-size: 31px !important;
+    }
+
+
+h2 {
+    font-size: 24px !important;
+}
+
+
+    h2.smaller {
+        font-size: 23px !important;
+    }
+
+
+    h2.bigger {
+        font-size: 25px !important;
+    }
+
+
+h3 {
+    font-size: 20px !important;
+}
+
+
+    h3.smaller {
+        font-size: 19px !important;
+    }
+
+
+    h3.bigger {
+        font-size: 21px !important;
+    }
+
+
+h4 {
+    font-size: 16px !important;
+}
+
+
+    h4.smaller {
+        font-size: 15px !important;
+    }
+
+
+    h4.bigger {
+        font-size: 17px !important;
+    }
+
+
+h5 {
+    font-size: 13px !important;
+}
+
+
+    h5.smaller {
+        font-size: 12px !important;
+    }
+
+
+    h5.bigger {
+        font-size: 14px !important;
+    }
+
+
+h6 {
+    font-size: 11px !important;
+}
+
+
+    h6.smaller {
+        font-size: 10px !important;
+    }
+
+
+    h6.bigger {
+        font-size: 12px !important;
+    }
+
+
+.modal-header .close {
+    font-size: 30px !important;
+}
+
+
+.alert {
+    font-size: 12px !important;
+}
+
+
+    .alert .close {
+        font-size: 14px !important;
+    }
+
+
+.bigger-110 {
+    font-size: 90% !important;
+}
+
+
+.bigger-120 {
+    font-size: 100% !important;
+}
+
+
+.bigger-130 {
+    font-size: 110% !important;
+}
+
+
+.bigger-140 {
+    font-size: 120% !important;
+}
+
+
+.bigger-150 {
+    font-size: 130% !important;
+}
+
+
+.bigger-160 {
+    font-size: 140% !important;
+}
+
+
+.bigger-170 {
+    font-size: 150% !important;
+}
+
+
+.bigger-180 {
+    font-size: 160% !important;
+}
+
+
+.bigger-190 {
+    font-size: 170% !important;
+}
+
+
+.bigger-200 {
+    font-size: 180% !important;
+}
+
+
+.bigger-210 {
+    font-size: 190% !important;
+}
+
+
+.bigger-220 {
+    font-size: 200% !important;
+}
+
+
+.bigger-230 {
+    font-size: 210% !important;
+}
+
+
+.bigger-240 {
+    font-size: 220% !important;
+}
+
+
+.bigger-250 {
+    font-size: 230% !important;
+}
+
+
+.bigger-260 {
+    font-size: 240% !important;
+}
+
+
+.bigger-270 {
+    font-size: 250% !important;
+}
+
+
+.bigger-280 {
+    font-size: 260% !important;
+}
+
+
+.bigger-290 {
+    font-size: 270% !important;
+}
+
+
+.bigger-300 {
+    font-size: 280% !important;
+}
+
+
+.bigger-115 {
+    font-size: 95% !important;
+}
+
+
+.bigger-125 {
+    font-size: 105% !important;
+}
+
+
+.bigger-175 {
+    font-size: 155% !important;
+}
+
+
+.bigger-225 {
+    font-size: 205% !important;
+}
+
+
+.bigger-275 {
+    font-size: 255% !important;
+}
+
+
+.smaller-90 {
+    font-size: 70% !important;
+}
+
+
+.smaller-80 {
+    font-size: 60% !important;
+}
+
+
+.smaller-70 {
+    font-size: 50% !important;
+}
+
+
+.smaller-60 {
+    font-size: 40% !important;
+}
+
+
+.smaller-50 {
+    font-size: 30% !important;
+}
+
+
+.smaller-40 {
+    font-size: 20% !important;
+}
+
+
+.smaller-30 {
+    font-size: 10% !important;
+}
+
+
+.smaller-75 {
+    font-size: 55% !important;
+}
+
+
+.hr-double {
+    height: 1px !important;
+}
+
+
+.navbar .navbar-brand {
+    font-size: 22px !important;
+}
+
+
+.ace-nav {
+    height: 98% !important;
+}
+
+
+    .ace-nav > li {
+        height: 43px !important;
+    }
+
+
+        .ace-nav > li > a {
+            height: 98% !important;
+        }
+
+
+            .ace-nav > li > a > .ace-icon {
+                font-size: 14px !important;
+            }
+
+
+.user-menu > li > a > .ace-icon {
+    font-size: 100% !important;
+}
+
+
+.navbar:not(.navbar-collapse) .navbar-buttons .user-info {
+    font-size: 12px !important;
+    height: 30px !important;
+}
+
+
+.navbar.navbar-collapse .navbar-buttons .user-info {
+    font-size: 12px !important;
+    height: 30px !important;
+}
+
+
+.user-min .user-info {
+    font-size: 12px !important;
+    height: 30px !important;
+}
+
+
+.navbar .navbar-nav > li > a {
+    height: 43px !important;
+    font-size: 11px !important;
+}
+
+
+.navbar-form input[type=text] {
+    font-size: 11px !important;
+}
+
+
+.navbar .navbar-toggle {
+    height: 33px !important;
+}
+
+
+.nav-list > li > a {
+    height: 37px !important;
+    font-size: 11px !important;
+}
+
+
+    .nav-list > li > a > .menu-icon {
+        font-size: 16px !important;
+    }
+
+
+.nav-list > li:before {
+    height: 39px !important;
+}
+
+
+.nav-list > li a > .arrow {
+    height: 12px !important;
+    font-size: 16px !important;
+}
+
+
+.nav-list > li.separator {
+    height: 1px !important;
+}
+
+
+.nav-list > li .submenu > li a > .menu-icon {
+    font-size: 10px !important;
+}
+
+
+.nav-list > li > .submenu a > .arrow {
+    font-size: 14px !important;
+}
+
+
+.nav-list a .badge, .nav-list a .label {
+    font-size: 10px !important;
+}
+
+
+.sidebar.sidebar-fixed:before {
+    height: 4998px !important;
+}
+
+
+.sidebar .sidebar-toggle > .ace-icon {
+    font-size: 12px !important;
+}
+
+
+.sidebar.compact .nav-list > li > a > .menu-icon {
+    height: 30px !important;
+    font-size: 18px !important;
+}
+
+
+.sidebar.navbar-collapse.compact .nav-list > li > a {
+    height: 37px !important;
+}
+
+
+    .sidebar.navbar-collapse.compact .nav-list > li > a > .menu-icon {
+        font-size: 16px !important;
+    }
+
+
+.sidebar.menu-min .nav-list > li > a {
+    height: 37px !important;
+}
+
+
+    .sidebar.menu-min .nav-list > li > a > .menu-icon {
+        font-size: 16px !important;
+    }
+
+
+    .sidebar.menu-min .nav-list > li > a > .menu-text {
+        height: 39px !important;
+    }
+
+
+.sidebar.menu-min .sidebar-toggle > .ace-icon {
+    font-size: 11px !important;
+}
+
+
+.sidebar.menu-min.compact .nav-list > li > a > .menu-icon {
+    font-size: 16px !important;
+}
+
+
+.sidebar.h-sidebar:before {
+    height: 15px !important;
+}
+
+
+.sidebar.h-sidebar .nav-list > li > a > .menu-icon {
+    font-size: 16px !important;
+}
+
+
+.navbar.navbar-fixed-top + .main-container .sidebar.responsive.push_away:before {
+    height: 4998px !important;
+}
+
+
+.sidebar.responsive .nav-list > li.active:after {
+    height: 39px !important;
+}
+
+
+.main-container .menu-toggler {
+    height: 30px !important;
+    font-size: 11px !important;
+}
+
+
+    .main-container .menu-toggler.display:before {
+        height: 2px !important;
+    }
+
+
+    .main-container .menu-toggler.display:after {
+        height: 2px !important;
+    }
+
+
+    .main-container .menu-toggler > .toggler-text:after {
+        font-size: 7px !important;
+    }
+
+
+.sidebar.responsive-min .nav-list > li > a {
+    height: 37px !important;
+}
+
+
+    .sidebar.responsive-min .nav-list > li > a > .menu-icon {
+        font-size: 16px !important;
+    }
+
+
+    .sidebar.responsive-min .nav-list > li > a > .menu-text {
+        height: 39px !important;
+    }
+
+
+.sidebar.responsive-min .sidebar-toggle > .ace-icon {
+    font-size: 11px !important;
+}
+
+
+.sidebar.responsive-min.compact .nav-list > li > a > .menu-icon {
+    font-size: 16px !important;
+}
+
+
+.sidebar.navbar-collapse .nav-list > li > a {
+    height: 39px !important;
+}
+
+
+.sidebar.navbar-collapse .nav-list > li:before {
+    height: 41px !important;
+}
+
+
+.scroll-hz .scroll-track {
+    height: 6px !important;
+}
+
+
+.scroll-visible.scroll-hz .scroll-track {
+    height: 6px !important;
+}
+
+
+.scroll-thin.scroll-hz .scroll-track.active, .scroll-thin.scroll-hz .scroll-track:active, .scroll-thin.scroll-hz.scroll-visible .scroll-track, .scroll-thin.scroll-hz:hover .scroll-track {
+    height: 4px !important;
+}
+
+
+.breadcrumb {
+    font-size: 11px !important;
+}
+
+
+    .breadcrumb > li + li:before {
+        font-size: 12px !important;
+    }
+
+
+    .breadcrumb .home-icon {
+        font-size: 18px !important;
+    }
+
+
+.nav-search .nav-search-input {
+    height: 26px !important;
+    font-size: 11px !important;
+}
+
+
+.nav-search .nav-search-icon {
+    font-size: 12px !important;
+}
+
+
+.sidebar > .nav-search {
+    height: 33px !important;
+}
+
+
+.btn-sm {
+    font-size: 11px !important;
+}
+
+
+.btn-minier {
+    font-size: 10px !important;
+}
+
+
+.btn.btn-app {
+    font-size: 16px !important;
+}
+
+
+    .btn.btn-app.btn-sm {
+        font-size: 14px !important;
+    }
+
+
+    .btn.btn-app.btn-xs {
+        font-size: 13px !important;
+    }
+
+
+    .btn.btn-app > .ace-icon {
+        font-size: 40px !important;
+    }
+
+
+    .btn.btn-app.btn-sm > .ace-icon {
+        font-size: 30px !important;
+    }
+
+
+    .btn.btn-app.btn-xs > .ace-icon {
+        font-size: 22px !important;
+    }
+
+
+    .btn.btn-app > .badge, .btn.btn-app > .label {
+        font-size: 10px !important;
+    }
+
+
+    .btn.btn-app > .label {
+        font-size: 11px !important;
+    }
+
+
+.badge {
+    font-size: 10px !important;
+}
+
+
+.label {
+    font-size: 10px !important;
+    height: 18px !important;
+}
+
+
+.label-lg {
+    font-size: 11px !important;
+    height: 22px !important;
+}
+
+
+.label-xlg {
+    font-size: 12px !important;
+    height: 26px !important;
+}
+
+
+.label-sm {
+    font-size: 9px !important;
+    height: 16px !important;
+}
+
+
+.dropdown-menu > li > a {
+    font-size: 11px !important;
+}
+
+
+.dropdown-colorpicker > .dropdown-menu > li {
+    height: 18px !important;
+}
+
+
+    .dropdown-colorpicker > .dropdown-menu > li > .colorpick-btn {
+        height: 18px !important;
+    }
+
+
+        .dropdown-colorpicker > .dropdown-menu > li > .colorpick-btn.selected:after {
+            font-size: 9px !important;
+        }
+
+
+.btn-colorpicker {
+    height: 18px !important;
+}
+
+
+.dropdown-navbar > li.dropdown-header {
+    font-size: 11px !important;
+}
+
+
+.dropdown-navbar > li > .ace-icon, .dropdown-navbar > li > a > .ace-icon {
+    font-size: 12px !important;
+}
+
+
+.dropdown-navbar > li > a {
+    font-size: 10px !important;
+}
+
+
+    .dropdown-navbar > li > a .badge {
+        font-size: 10px !important;
+    }
+
+
+.dropdown-navbar > li.dropdown-footer > a {
+    font-size: 11px !important;
+}
+
+
+.dropdown-navbar .msg-time {
+    font-size: 9px !important;
+}
+
+
+    .dropdown-navbar .msg-time > .ace-icon {
+        font-size: 12px !important;
+    }
+
+
+.help-button {
+    height: 20px !important;
+    font-size: 10px !important;
+}
+
+
+label {
+    font-size: 12px !important;
+}
+
+
+input[type=color], input[type=date], input[type=datetime-local], input[type=datetime], input[type=email], input[type=month], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], input[type=week], textarea {
+    font-size: 12px !important;
+}
+
+
+select {
+    height: 28px !important;
+}
+
+
+.limiterBox {
+    font-size: 11px !important;
+}
+
+
+.help-inline {
+    font-size: 11px !important;
+}
+
+
+.input-icon > .ace-icon {
+    font-size: 14px !important;
+}
+
+
+input.input-lg {
+    font-size: 16px !important;
+}
+
+
+input[type=checkbox].ace, input[type=radio].ace {
+    height: 16px !important;
+}
+
+
+    input[type=checkbox].ace + .lbl::before, input[type=radio].ace + .lbl::before {
+        font-size: 10px !important;
+        height: 16px !important;
+    }
+
+
+    input[type=radio].ace + .lbl::before {
+        font-size: 8px !important;
+        height: 18px !important;
+    }
+
+
+    input[type=checkbox].ace.ace-switch {
+        height: 23px !important;
+    }
+
+
+        input[type=checkbox].ace.ace-switch + .lbl::before {
+            font-size: 9px !important;
+            height: 18px !important;
+        }
+
+
+        input[type=checkbox].ace.ace-switch + .lbl::after {
+            font-size: 10px !important;
+            height: 20px !important;
+        }
+
+
+        input[type=checkbox].ace.ace-switch.ace-switch-3 + .lbl::after {
+            font-size: 11px !important;
+        }
+
+
+        input[type=checkbox].ace.ace-switch.ace-switch-4 + .lbl::before, input[type=checkbox].ace.ace-switch.ace-switch-5 + .lbl::before {
+            font-size: 10px !important;
+            height: 22px !important;
+        }
+
+
+        input[type=checkbox].ace.ace-switch.ace-switch-4 + .lbl::after, input[type=checkbox].ace.ace-switch.ace-switch-5 + .lbl::after {
+            font-size: 9px !important;
+            height: 18px !important;
+        }
+
+
+        input[type=checkbox].ace.ace-switch.ace-switch-6 + .lbl::before {
+            font-size: 14px !important;
+            height: 20px !important;
+        }
+
+
+        input[type=checkbox].ace.ace-switch.ace-switch-6 + .lbl::after {
+            height: 16px !important;
+        }
+
+
+        input[type=checkbox].ace.ace-switch.ace-switch-7 + .lbl::before {
+            font-size: 11px !important;
+            height: 24px !important;
+        }
+
+
+        input[type=checkbox].ace.ace-switch.ace-switch-7 + .lbl::after {
+            font-size: 14px !important;
+            height: 18px !important;
+        }
+
+
+        input[type=checkbox].ace.ace-switch.btn-rotate + .lbl::after {
+            font-size: 15px !important;
+        }
+
+
+.ace-file-input {
+    height: 28px !important;
+}
+
+
+    .ace-file-input .ace-file-container {
+        height: 28px !important;
+    }
+
+
+        .ace-file-input .ace-file-container:before {
+            font-size: 9px !important;
+        }
+
+
+        .ace-file-input .ace-file-container .ace-file-name {
+            height: 26px !important;
+            font-size: 11px !important;
+        }
+
+
+        .ace-file-input .ace-file-container .ace-icon {
+            font-size: 11px !important;
+        }
+
+
+    .ace-file-input .remove {
+        height: 15px !important;
+        font-size: 9px !important;
+    }
+
+
+.ace-file-multiple .ace-file-container:before {
+    font-size: 16px !important;
+}
+
+
+.ace-file-multiple .ace-file-container.selected .ace-file-name .ace-icon {
+    font-size: 11px !important;
+}
+
+
+.ace-file-multiple .remove {
+    height: 21px !important;
+}
+
+
+.ace-file-multiple .ace-file-container .ace-file-name .ace-icon {
+    font-size: 62px !important;
+}
+
+
+.accordion-style1.panel-group .panel-heading .accordion-toggle {
+    font-size: 11px !important;
+}
+
+
+.accordion-style2.panel-group .accordion-style2.panel-group .panel .panel-heading, .accordion-style2.panel-group .accordion-style2.panel-group .panel .panel-heading .accordion-toggle {
+    font-size: 11px !important;
+}
+
+
+.table-header {
+    font-size: 12px !important;
+}
+
+
+.widget-toolbar > .widget-menu > a, .widget-toolbar > a {
+    font-size: 12px !important;
+}
+
+
+.widget-header-large > .widget-toolbar > .widget-menu > a, .widget-header-large > .widget-toolbar > a {
+    font-size: 13px !important;
+}
+
+
+.tooltip-inner {
+    font-size: 10px !important;
+}
+
+
+.progress {
+    height: 16px !important;
+}
+
+
+    .progress[data-percent]:after {
+        font-size: 10px !important;
+    }
+
+
+    .progress.progress-small {
+        height: 10px !important;
+    }
+
+
+        .progress.progress-small .progress-bar, .progress.progress-small[data-percent]:after {
+            font-size: 9px !important;
+        }
+
+
+    .progress.progress-mini {
+        height: 7px !important;
+    }
+
+
+        .progress.progress-mini .progress-bar, .progress.progress-mini[data-percent]:after {
+            font-size: 9px !important;
+        }
+
+
+.infobox {
+    height: 64px !important;
+}
+
+
+    .infobox > .infobox-icon > .ace-icon {
+        height: 40px !important;
+    }
+
+
+        .infobox > .infobox-icon > .ace-icon:before {
+            font-size: 22px !important;
+        }
+
+
+    .infobox > .infobox-data {
+        font-size: 11px !important;
+    }
+
+
+        .infobox > .infobox-data > .infobox-data-number {
+            font-size: 20px !important;
+        }
+
+
+        .infobox > .infobox-data > .infobox-text {
+            font-size: 14px !important;
+        }
+
+
+.infobox-dark > .infobox-icon > .ace-icon, .infobox-dark > .infobox-icon > .ace-icon:before {
+    font-size: 28px !important;
+}
+
+
+.infobox > .infobox-chart > .sparkline {
+    font-size: 22px !important;
+}
+
+
+.infobox > .stat {
+    font-size: 11px !important;
+}
+
+
+    .infobox > .stat:before {
+        height: 9px !important;
+    }
+
+
+.infobox > .badge {
+    font-size: 9px !important;
+    height: 14px !important;
+}
+
+
+.infobox-small {
+    height: 50px !important;
+}
+
+
+    .infobox-small > .infobox-chart, .infobox-small > .infobox-icon, .infobox-small > .infobox-progress {
+        height: 40px !important;
+    }
+
+
+        .infobox-small > .infobox-chart > .sparkline {
+            font-size: 12px !important;
+        }
+
+
+.percentage {
+    font-size: 12px !important;
+}
+
+
+.infobox-small .percentage {
+    font-size: 11px !important;
+}
+
+
+.pricing-box .price {
+    font-size: 20px !important;
+    height: 26px !important;
+}
+
+
+    .pricing-box .price small {
+        font-size: 20px !important;
+    }
+
+
+.pricing-box .btn {
+    font-size: 14px !important;
+}
+
+
+.pricing-table-header > li {
+    font-size: 11px !important;
+}
+
+
+.pricing-table > li {
+    font-size: 11px !important;
+}
+
+
+.pricing-box-small .price {
+    height: 26px !important;
+}
+
+
+.login-layout .widget-box .widget-body .toolbar > div > a {
+    font-size: 13px !important;
+}
+
+
+.forgot-box .back-to-login-link, .signup-box .back-to-login-link {
+    font-size: 12px !important;
+}
+
+
+.social-or-login :first-child {
+    font-size: 11px !important;
+}
+
+
+.social-login a {
+    height: 40px !important;
+}
+
+
+    .social-login a > .ace-icon {
+        font-size: 22px !important;
+    }
+
+
+.invoice-info-label {
+    font-size: 12px !important;
+}
+
+
+.ace-thumbnails > li > .tools.tools-bottom {
+    height: 26px !important;
+}
+
+
+.ace-thumbnails > li > .tools.tools-top {
+    height: 26px !important;
+}
+
+
+.ace-thumbnails > li > .tools > a, .ace-thumbnails > li > :first-child .inner a {
+    font-size: 16px !important;
+}
+
+
+.ace-thumbnails > li > :first-child > .text:before {
+    height: 98% !important;
+}
+
+
+.itemdiv > .body > .time {
+    font-size: 9px !important;
+}
+
+
+    .itemdiv > .body > .time .ace-icon {
+        font-size: 12px !important;
+    }
+
+
+.itemdiv > .body > .text {
+    font-size: 11px !important;
+}
+
+
+.itemdiv.dialogdiv > .body:before {
+    height: 6px !important;
+}
+
+
+.itemdiv.memberdiv > .body > .name {
+    height: 16px !important;
+}
+
+
+.item-list > li label {
+    font-size: 11px !important;
+}
+
+
+.item-list > li .percentage {
+    font-size: 9px !important;
+}
+
+
+.profile-activity .thumbicon {
+    height: 36px !important;
+    font-size: 16px !important;
+}
+
+
+.profile-skills .progress {
+    height: 24px !important;
+}
+
+
+    .profile-skills .progress .progress-bar {
+        font-size: 11px !important;
+    }
+
+
+.user-status {
+    height: 9px !important;
+}
+
+
+.inbox-tabs.nav-tabs.tab-size-bigger > li > a {
+    font-size: 12px !important;
+}
+
+
+.message-item .sender {
+    height: 16px !important;
+}
+
+
+.message-item .summary .text {
+    height: 16px !important;
+}
+
+
+.message-item .summary .message-flags {
+    height: 16px !important;
+}
+
+
+.message-item .time {
+    height: 16px !important;
+}
+
+
+.message-item .attachment {
+    font-size: 16px !important;
+}
+
+
+.message-star {
+    font-size: 13px !important;
+}
+
+
+.mail-tag:empty {
+    height: 9px !important;
+}
+
+
+.message-footer input[type=text] {
+    font-size: 10px !important;
+    height: 22px !important;
+}
+
+
+.message-footer-style2 .pagination > li > a, .message-footer-style2 .pagination > li > span {
+    height: 24px !important;
+}
+
+
+.timeline-info .badge, .timeline-info .label {
+    font-size: 10px !important;
+}
+
+
+.timeline-container:not(.timeline-style2) .timeline-indicator {
+    font-size: 14px !important;
+    height: 34px !important;
+}
+
+
+.timeline-style2 .timeline-indicator {
+    height: 10px !important;
+}
+
+
+.timeline-style2 .timeline-label {
+    font-size: 12px !important;
+}
+
+
+.dataTables_length select {
+    height: 23px !important;
+}
+
+
+.dataTables_filter input[type=search], .dataTables_filter input[type=text] {
+    height: 16px !important;
+}
+
+
+.dataTables_info {
+    font-size: 12px !important;
+}
+
+
+.dataTables_wrapper label {
+    font-size: 11px !important;
+}
+
+
+.dataTable > thead > tr > th[class*=sort]:after {
+    font-size: 11px !important;
+}
+
+
+.fc-header-title > h2 {
+    font-size: 20px !important;
+}
+
+
+.external-event {
+    font-size: 11px !important;
+}
+
+
+    .external-event > .ace-icon:first-child {
+        height: 30px !important;
+        font-size: 13px !important;
+    }
+
+
+.chosen-container > .chosen-single, [class*=chosen-container] > .chosen-single {
+    height: 28px !important;
+}
+
+
+.chosen-container-single .chosen-single abbr:after {
+    font-size: 11px !important;
+}
+
+
+.chosen-single div b:before {
+    font-size: 10px !important;
+}
+
+
+.chosen-container-single .chosen-search input[type=text] {
+    height: 26px !important;
+}
+
+
+.chosen-container-single .chosen-search:after {
+    font-size: 12px !important;
+}
+
+
+.chosen-container-multi .chosen-choices li.search-field input[type=text] {
+    height: 23px !important;
+}
+
+
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close:before {
+    font-size: 11px !important;
+}
+
+
+.chosen-container .chosen-results-scroll-down span:before, .chosen-container .chosen-results-scroll-up span:before {
+    font-size: 10px !important;
+}
+
+
+.chosen-rtl .chosen-search:before {
+    font-size: 12px !important;
+}
+
+
+.tag-input-style + .chosen-container-multi .chosen-choices li.search-choice {
+    font-size: 11px !important;
+}
+
+
+    .tag-input-style + .chosen-container-multi .chosen-choices li.search-choice .search-choice-close:before {
+        font-size: 9px !important;
+    }
+
+
+    .select2-container .select2-choice abbr:before, .select2-search-choice-close:before {
+        font-size: 10px !important;
+    }
+
+
+    .select2-container .select2-choice .select2-arrow b:before {
+        font-size: 10px !important;
+    }
+
+
+.select2-search:after {
+    font-size: 12px !important;
+}
+
+
+#cboxCurrent {
+    font-size: 12px !important;
+}
+
+
+#cboxTitle {
+    font-size: 12px !important;
+}
+
+
+#cboxClose, #cboxNext, #cboxPrevious {
+    height: 24px !important;
+    font-size: 10px !important;
+}
+
+
+#cboxClose {
+    font-size: 19px !important;
+    height: 26px !important;
+}
+
+
+#cboxLoadingGraphic > .ace-icon {
+    height: 30px !important;
+    font-size: 22px !important;
+}
+
+
+.ace-spinner .spinner-buttons > .btn {
+    font-size: 8px !important;
+    height: 12px !important;
+}
+
+
+.ace-spinner .spinner-input {
+    height: 27px !important;
+}
+
+
+.ace-spinner.touch-spinner .spinner-buttons > .btn {
+    height: 27px !important;
+    font-size: 16px !important;
+}
+
+
+.wizard-steps li .step {
+    font-size: 13px !important;
+    height: 38px !important;
+}
+
+
+.wizard-steps li.complete .step:before {
+    font-size: 15px !important;
+}
+
+
+.wizard-steps li .title {
+    font-size: 12px !important;
+}
+
+
+.wizard-steps li.complete .step:before {
+    font-size: 11px !important;
+}
+
+
+.tree .tree-folder .tree-folder-header {
+    height: 18px !important;
+}
+
+
+.tree .tree-item {
+    height: 18px !important;
+}
+
+
+    .tree .tree-item > .ace-icon:first-child {
+        height: 11px !important;
+        font-size: 9px !important;
+    }
+
+
+.tree .tree-minus.ace-icon:first-child, .tree .tree-plus.ace-icon:first-child {
+    height: 9px !important;
+}
+
+
+    .tree .tree-plus.ace-icon:first-child:after {
+        height: 5px !important;
+    }
+
+
+.tree .tree-unselectable .tree-item > .ace-icon:first-child {
+    height: 11px !important;
+    font-size: 8px !important;
+}
+
+
+.gritter-close {
+    height: 16px !important;
+}
+
+
+    .gritter-close:before {
+        font-size: 14px !important;
+    }
+
+
+.wysiwyg-editor {
+    height: 248px !important;
+}
+
+
+.wysiwyg-toolbar .btn-group > .btn > .ace-icon:first-child {
+    font-size: 12px !important;
+}
+
+
+.wysiwyg-toolbar .btn-colorpicker {
+    height: 22px !important;
+}
+
+
+.wysiwyg-style1 .btn-colorpicker {
+    height: 18px !important;
+}
+
+
+.wysiwyg-editor .ui-wrapper:after {
+    height: 5px !important;
+}
+
+
+.widget-body .md-header .btn > .ace-icon {
+    font-size: 12px !important;
+}
+
+
+.editable-buttons .btn {
+    font-size: 10px !important;
+}
+
+
+.editable-clear-x:before {
+    font-size: 13px !important;
+    height: 28px !important;
+}
+
+
+.datepicker td, .datepicker th, .daterangepicker td, .daterangepicker th {
+    font-size: 11px !important;
+}
+
+
+.bootstrap-datetimepicker-widget .picker-switch .btn {
+    font-size: 14px !important;
+}
+
+
+.ui-slider-horizontal {
+    height: 7px !important;
+}
+
+
+.ui-slider .ui-slider-handle:after, .ui-slider .ui-slider-handle:before {
+    height: 6px !important;
+}
+
+
+.ui-slider-small.ui-slider-horizontal {
+    height: 3px !important;
+}
+
+
+.ui-slider-small .ui-slider-handle {
+    height: 15px !important;
+}
+
+
+    .ui-slider-small .ui-slider-handle:after, .ui-slider-small .ui-slider-handle:before {
+        height: 5px !important;
+    }
+
+
+.ui-datepicker .ui-datepicker-next, .ui-datepicker .ui-datepicker-prev {
+    height: 24px !important;
+}
+
+
+    .ui-datepicker .ui-datepicker-next:before, .ui-datepicker .ui-datepicker-prev:before {
+        font-size: 12px !important;
+    }
+
+
+.ui-datepicker td > a, .ui-datepicker td > span {
+    height: 20px !important;
+    font-size: 11px !important;
+}
+
+
+.ui-datepicker td .ui-datepicker-title select {
+    height: 22px !important;
+}
+
+
+.ui-dialog .ui-dialog-titlebar, .ui-dialog .ui-jqdialog-titlebar, .ui-jqdialog .ui-dialog-titlebar, .ui-jqdialog .ui-jqdialog-titlebar {
+    font-size: 14px !important;
+}
+
+
+.ui-dialog .ui-dialog-buttonpane button, .ui-dialog .ui-jqdialog-buttonpane button, .ui-jqdialog .ui-dialog-buttonpane button, .ui-jqdialog .ui-jqdialog-buttonpane button {
+    font-size: 12px !important;
+}
+
+
+.ui-dialog .ui-dialog-titlebar-close:before, .ui-dialog .ui-jqdialog-titlebar-close:before, .ui-jqdialog .ui-dialog-titlebar-close:before, .ui-jqdialog .ui-jqdialog-titlebar-close:before {
+    font-size: 14px !important;
+}
+
+
+.ui-accordion .ui-accordion-header .ui-accordion-header-icon:before {
+    font-size: 13px !important;
+}
+
+
+.ui-menu .ui-menu-item a .ui-menu-icon:before {
+    font-size: 12px !important;
+}
+
+
+.ui-spinner-button {
+    font-size: 8px !important;
+    height: 12px !important;
+}
+
+
+.ui-spinner-input {
+    font-size: 12px !important;
+}
+
+
+.ui-progressbar {
+    height: 20px !important;
+}
+
+
+.ui-jqgrid .ui-jqgrid-view, .ui-jqgrid .ui-paging-info, .ui-jqgrid .ui-pg-selbox, .ui-jqgrid .ui-pg-table {
+    font-size: 11px !important;
+}
+
+
+.ui-jqgrid-view > .ui-jqgrid-titlebar {
+    height: 38px !important;
+    font-size: 13px !important;
+}
+
+
+.ui-jqgrid .ui-jqgrid-htable th span.ui-jqgrid-resize {
+    height: 43px !important;
+}
+
+
+.ui-jqgrid .ui-jqgrid-pager {
+    height: 53px !important;
+}
+
+
+.ui-jqgrid .ui-pg-input {
+    height: 18px !important;
+}
+
+
+.ui-jqgrid .ui-pg-selbox {
+    height: 22px !important;
+}
+
+
+.ui-jqgrid .ui-pager-control {
+    height: 48px !important;
+}
+
+
+.ui-jqgrid .loading {
+    font-size: 10px !important;
+}
+
+
+.ui-jqgrid-sortable {
+    font-size: 11px !important;
+}
+
+
+.ui-grid-ico-sort:before {
+    font-size: 10px !important;
+}
+
+
+.ui-pg-table > tbody > tr > .ui-pg-button > .ui-icon {
+    height: 22px !important;
+}
+
+
+.ui-jqgrid-btable select {
+    height: 23px !important;
+}
+
+
+.ui-pg-div .ui-icon {
+    font-size: 15px !important;
+}
+
+
+.ui-jqdialog .ui-jqdialog-content, .ui-jqdialog-content {
+    font-size: 11px !important;
+}
+
+
+    .ui-jqdialog .ui-jqdialog-content .formdata, .ui-jqdialog-content .formdata {
+        font-size: 11px !important;
+    }
+
+
+    .ui-jqdialog .ui-jqdialog-content .form-view-data, .ui-jqdialog-content .form-view-data {
+        font-size: 11px !important;
+    }
+
+
+    .ui-jqdialog-content .CaptionTD {
+        font-size: 10px !important;
+    }
+
+
+    .ui-jqdialog-content select.FormElement {
+        height: 23px !important;
+    }
+
+
+.EditTable .navButton .fm-button .ace-icon {
+    height: 24px !important;
+}
+
+
+.ui-jqgrid .ui-jqgrid-view button, .ui-jqgrid .ui-jqgrid-view input, .ui-jqgrid .ui-jqgrid-view select, .ui-jqgrid .ui-jqgrid-view textarea {
+    font-size: 11px !important;
+}
+
+
+.ui-jqdialog-content .searchFilter select {
+    height: 24px !important;
+}
+
+
+.ui-jqdialog-content .searchFilter .input-elm {
+    height: 16px !important;
+}
+
+
+.ui-jqdialog-content .searchFilter .add-group, .ui-jqdialog-content .searchFilter .add-rule, .ui-jqdialog-content .searchFilter .delete-group {
+    font-size: 13px !important;
+}
+
+
+.ui-jqdialog-content .searchFilter .delete-rule {
+    font-size: 18px !important;
+}
+
+
+.ui-state-error {
+    font-size: 11px !important;
+}
+
+
+.fm-button:not(.btn) {
+    font-size: 11px !important;
+}
+
+
+.ui-jqgrid .ui-jqgrid-htable .ui-search-toolbar th {
+    height: 28px !important;
+}
+
+
+    .ui-jqgrid .ui-jqgrid-htable .ui-search-toolbar th div {
+        height: 28px !important;
+    }
+
+
+.ui-jqgrid .ui-subgrid .ui-jqgrid .ui-jqgrid-hdiv .ui-jqgrid-htable th .ui-jqgrid-sortable {
+    font-size: 10px !important;
+}
+
+
+.ui-jqgrid .ui-subgrid .ui-jqgrid .ui-jqgrid-hdiv .ui-jqgrid-htable th span.ui-jqgrid-resize {
+    height: 34px !important;
+}
+
+
+.ui-jqgrid .ui-jqgrid-pager > .ui-pager-control {
+    height: 83px !important;
+}
+
+
+.dd-item > button {
+    height: 18px !important;
+    font-size: 10px !important;
+}
+
+
+    .dd-item > button:before {
+        font-size: 12px !important;
+    }
+
+
+.dd-dragel > li > .dd2-handle, .dd2-handle {
+    height: 36px !important;
+}
+
+
+.dropzone .dz-default.dz-message {
+    font-size: 22px !important;
+}
+
+
+.dropzone .dz-preview .dz-error-mark:before, .dropzone-previews .dz-preview .dz-error-mark:before {
+    font-size: 28px !important;
+}
+
+
+.dropzone .dz-preview .dz-success-mark:before, .dropzone-previews .dz-preview .dz-success-mark:before {
+    font-size: 28px !important;
+}
+
+
+input.tt-hint, input.tt-query, input.typeahead {
+    font-size: 14px !important;
+}
+
+
+.tt-suggestion {
+    font-size: 14px !important;
+}
+
+
+.ace-settings-box .ace-settings-item > label.lbl {
+    font-size: 11px !important;
+}
+
+
+.tags .tag {
+    font-size: 11px !important;
+}
+
+
+    .tags .tag .close {
+        font-size: 13px !important;
+    }
+
+
+.legendLabel {
+    height: 20px !important;
+    font-size: 8px !important;
+}
+
+
+.onpage-help-section > .help-icon-1 {
+    font-size: 34px !important;
+    height: 46px !important;
+}
+
+
+.onpage-help-section.help-section-small > .help-icon-1 {
+    font-size: 16px !important;
+    height: 26px !important;
+}
+
+
+.onpage-help-section.help-section-smaller > .help-icon-1 {
+    font-size: 12px !important;
+    height: 18px !important;
+}
+
+
+.onpage-help-section > .help-icon-2 {
+    height: 16px !important;
+    font-size: 14px !important;
+}
+
+
+.onpage-help-modal .modal-title code {
+    font-size: 11px !important;
+}
+
+
+.onpage-help-modal .modal-body {
+    font-size: 12px !important;
+}

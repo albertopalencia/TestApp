@@ -1,0 +1,65 @@
+﻿.ajaxProcessingContainerDiv {
+    border: 0;
+    height: 10%;
+    width: 20%;
+    position: fixed;
+    _position: absolute;
+    left: 40%;
+    top: 40%;
+    color: black;
+    z-index: 100;
+}
+
+.ajaxProcesingTable {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.ajaxProcesingImageTD {
+    text-align: center;
+}
+
+.ajaxProcesingTextTD {
+    text-align: center;
+    color: #0067a2;
+    font-size: medium;
+}
+
+.updateProgress {
+    border-width: 1px;
+    border-style: solid;
+    background-color: #FFFFFF;
+    position: absolute;
+    width: 180px;
+    height: 65px;
+}
+
+.modalTop {
+    background: #3399FF none repeat scroll 0 0;
+    color: #ffffff;
+    text-align: right;
+    cursor: pointer;
+}
+
+.containermodal {
+    display: table;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: #999999; /* solid color */
+    background: rgba(0, 0, 0, 0.4); /* transparent color */
+    background: transparent9; /* clear solid background for ie */
+    zoom: 1; /* required for the filters */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)"; /* IE8 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000); /* IE5.5-7 */
+    z-index: 10000;
+}
+
+.fa.fa-calendar.bigger-110
+{
+    cursor:pointer;
+}

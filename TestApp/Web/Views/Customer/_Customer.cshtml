@@ -1,0 +1,54 @@
+﻿@model  dynamic
+
+<div class="col-xs-12 widget-container-col ui-sortable">
+    <div class="widget-box ui-sortable-handle">
+        <div class="widget-header">
+            <h5 class="widget-title">Aspirantes</h5>
+            <div class="widget-toolbar">
+                <a href="#" data-action="collapse">
+                    <i class="ace-icon fa fa-chevron-up"></i>
+                </a>
+            </div>
+        </div>
+        <div class="widget-body">
+            <div class="widget-main">
+               <div class="row">
+                    <div class="col-xs-2">
+                        <label>Nit:</label>
+                    </div>
+                    <div class="col-xs-4">
+                        @Html.TextBoxFor(model => model.Nit, new { @class = "form-control required", @GroupValidation = "Save" })
+                    </div>
+                   <div class="col-xs-2">
+                       <label>First Name:</label>
+                   </div>
+                   <div class="col-xs-4">
+                       @Html.TextBoxFor(model => model.FirstName, new { @class = "form-control required", @GroupValidation = "Save" })
+                   </div>
+                </div>
+               <div class="space space-2"></div>
+                <div class="row">
+                    <div class="col-xs-2">
+                        <label>Email:</label>
+                    </div>
+                    <div class="col-xs-4">
+                        @Html.TextBoxFor(model => model.Email, new { @class = "form-control emailCustom", @GroupValidation = "Save" })
+                    </div>
+                </div>
+                <div class="space space-2"></div>
+                <div class="row">
+                    <div class="clearfix form-actions center">
+                        <button id="btnguardar" type="button" class="btn btn-primary btn-sm" name="SaveCustomer" GroupValidation="Save">
+                            <i class="ace-icon fa fa-floppy-o"></i>
+                            Save
+                        </button>
+                        <button id="btnCerrarRadicado" type="button" class="btn btn-default btn-sm" data-dismiss="modal">
+                            <i class=" ace-icon fa fa-times"></i>
+                            Cancel
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

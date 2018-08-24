@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <!-- bootstrap & fontawesome -->
+    <link rel="stylesheet" href="~/assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/assets/css/font-awesome.min.css" />
+
+    <!-- page specific plugin styles -->
+    <link rel="stylesheet" href="~/assets/css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="~/assets/css/estilos.css" />
+    <link rel="stylesheet" href="~/assets/css/datepicker.css" />
+    <link rel="stylesheet" href="~/assets/css/bootstrap-timepicker.css" />
+    <link rel="stylesheet" href="~/assets/css/bootstrap-datetimepicker.css" />
+    <!-- text fonts -->
+    <link rel="stylesheet" href="~/assets/css/ace-fonts.css" />
+
+    <!-- ace styles -->
+    <link rel="stylesheet" href="~/assets/css/ace.min.css" id="main-ace-style" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="@Url.Content("~/assets/css/ace-part2.min.css")" />
+    <![endif]-->
+    <link rel="stylesheet" href="~/assets/css/ace-skins.min.css" />
+    <link rel="stylesheet" href="~/assets/css/ace-rtl.min.css" />
+
+    <link href="~/assets/css/kendo/kendo.common-bootstrap.min.css" rel="stylesheet" />
+    <link href="~/assets/css/kendo/kendo.bootstrap.min.css" rel="stylesheet" />
+
+
+    <!--[if lte IE 9]>
+      <link rel="stylesheet" href="@Url.Content("~/assets/css/ace-ie.min.css")" />
+    <![endif]-->
+    
+    <script src="~/assets/js/ace-extra.min.js"></script>
+    
+    <!--[if lte IE 8]>
+    <script src="@Url.Content("~/assets/js/html5shiv.min.js")"></script>
+    <script src="@Url.Content("~/assets/js/respond.min.js")"></script>
+    <![endif]-->
+
+    <script src="@Url.Content("~/assets/js/jquery.min.js")"></script>
+    <script src="@Url.Content("~/assets/js/kendo/kendo.all.min.js")"></script>
+    <script src="@Url.Content("~/assets/js/kendo/kendo.aspnetmvc.min.js")"></script>
+
+    <script src="@Url.Content("~/assets/js/jquery.cookie.js")"></script>
+    <script src="@Url.Content("~/assets/js/jQuery.flashMessage.js")"></script>
+    <script src="@Url.Content("~/assets/js/select2.min.js")"></script>
+    <script src="@Url.Content("~/assets/js/bootbox2.min.js")"></script>
+    <script src="@Url.Content("~/assets/js/autoNumeric.js")"></script>
+    <script src="@Url.Content("~/assets/js/custom/Utilidades/Utilidades.js")"></script>
+    <script src="@Url.Content("~/assets/js/numericInput.min.js")"></script>
+    <script src="@Url.Content("~/assets/js/jquery.maskedinput1.4.min.js")"></script>
+    
+
+
+    <link rel="stylesheet" href="~/assets/css/select2.css" />
+    <link href="~/assets/css/aseinges/styles.css" rel="stylesheet" />
+
+    <script type="text/javascript">
+        $(function () {
+            $("#flash-messages").flashMessage();
+        });
+
+        function mostrarMensaje(titulo, texto) {
+            $('#idTituloMensaje').html(titulo);
+            $('#idTextoMensaje').html(texto);
+            $('#idModalTexto').modal('show');
+        }
+
+        $(document).ready(function () {
+            $(".select2").select2({ allowClear: true })
+               .on('change', function () {
+                   $(this).closest('form').validate().element($(this));
+               }).addClass('width-100 input-sm no-padding');
+
+            bootbox.setDefaults({
+                locale: "es",
+                backdrop: true
+            });
+            
+            $(".onlyNumber").numericInput({ allowFloat: false, allowNegative: false });
+        });
+
+        function DisableBackButtonAllBrowsers() {
+            window.history.forward();
+        };
+
+        function DisableBack() {
+            DisableBackButtonAllBrowsers();
+            window.onload = DisableBackButtonAllBrowsers;
+            window.onpageshow = function (evts) { if (evts.persisted) DisableBackButtonAllBrowsers(); };
+            window.onunload = function () { void (0) };
+        }
+
+    </script>
+    
+    <title> Test App </title>
+</head>
+
+<body class="no-skin">
+    <div id="navbar" class="navbar navbar-default navbar-fixed-top navbar-collapse h-navbar">
+        <script type="text/javascript">
+            try { ace.settings.check('navbar', 'fixed') } catch (e) { }
+        </script>
+
+        <div class="navbar-container" id="navbar-container">
+            <div class="navbar-header pull-left">
+                <a href="#" class="navbar-brand">
+                    <small>
+                        <i class="fa fa-user-md"></i>
+                        <i><b> TestApp </b></i>
+                    </small>
+                </a>
+
+               <button type="button" class="navbar-toggle menu-toggler pull-right" id="menu-toggler">
+                    <span class="sr-only">Toggle sidebar</span>
+
+                    <span class="icon-bar"></span>
+
+                    <span class="icon-bar"></span>
+
+                    <span class="icon-bar"></span>
+                </button>
+                </div>
+                  <nav role="navigation" class="navbar-menu pull-right collapse navbar-collapse">
+                  <ul class="nav navbar-nav">
+                        <li>
+                            <a id="logout">
+                                <i class="ace-icon fa fa-times"></i>
+                                @DateTime.Now;
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="ace-icon fa fa-user"></i>
+                               Alberto Palencia Benedetty
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+        </div>
+    </div>
+
+    
+    <div class="main-container" id="main-container">
+        <div id="sidebar" class="sidebar sidebar-fixed responsive">
+            <script type="text/javascript">
+                try { ace.settings.check('sidebar', 'fixed') } catch (e) { }
+            </script>
+            <ul id="ulMenu" class="nav nav-list">
+                <li id="liaspirantes" class="hsub">
+                    <a href="~/Customer">
+                        <b class="arrow fa fa-angle-down"></b>
+                        Customers
+                    </a>
+                    <b class="arrow"></b>
+                </li>
+
+                <li>
+                    <a href="#" class="dropdown-toggle">
+                        <i class="menu-icon fa fa-circle-o-notch"></i>
+                        <span class="menu-text"> Queries </span>
+                        <b class="arrow fa fa-angle-down"></b>
+                    </a>
+
+                    <b class="arrow"></b>
+
+                    <ul class="submenu nav-show" style="display: block;">
+                        <li class="">
+                            <a href="~/Queries/Customer">
+                                <i class="menu-icon fa fa-caret-right"></i>
+                               Customers
+                            </a>
+                            <b class="arrow"></b>
+                        </li>
+
+                        <li class="">
+                            <a href="~/Queries/Services">
+                                <i class="menu-icon fa fa-caret-right"></i>
+                                Services
+                            </a>
+                            <b class="arrow"></b>
+                        </li>
+                        <li class="">
+                            <a href="~/Queries/Countries">
+                                <i class="menu-icon fa fa-caret-right"></i>
+                                Countries
+                            </a>
+                            <b class="arrow"></b>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+       <div class="main-content">
+            <div class="page-content">
+                <div class="row">
+                    <div class="col-xs-12">
+                       @RenderBody()
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+                <div class="footer-inner">
+                    <div class="footer-content">
+                        <span class="bigger-120">
+                            Alberto Palencia Benedetty
+                        </span>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script type="text/javascript">
+    if ('ontouchstart' in document.documentElement) document.write("<script src='@Url.Content("~/assets/js/jquery.mobile.custom.min.js")'>" + "<" + "/script>");
+    </script>
+
+    <script src="~/assets/js/jquery-ui.min.js"></script>
+    <script src="~/assets/js/jquery.ui.touch-punch.min.js"></script>
+    <script src="~/assets/js/bootstrap.min.js"></script>
+    <script src="~/assets/js/date-time/bootstrap-datepicker.min.js"></script>
+    <script src="~/assets/js/date-time/bootstrap-timepicker.min.js"></script>
+    <script src="~/assets/js/date-time/moment.min.js"></script>
+    <script src="~/assets/js/date-time/bootstrap-datetimepicker.min.js"></script>
+    <script src="~/assets/js/validaciones.js"></script>
+
+   <script src="~/assets/js/jquery.validate.min.js"></script>
+    <script src="~/assets/js/jquery.validate.es.js"></script>
+    <script src="~/assets/js/ace-elements.min.js"></script>
+    <script src="~/assets/js/ace.min.js"></script>
+    <script src="~/assets/js/bootstrap-waitingfor.js"></script>
+    @RenderSection("scripts", required: false)
+    <div id="idModalTexto" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="idTituloMensaje"></h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-xs-12" id="idTextoMensaje">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sm" data-dismiss="modal">
+                        <i class=" ace-icon fa fa-times"></i>Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
