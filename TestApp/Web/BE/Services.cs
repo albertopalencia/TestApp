@@ -15,6 +15,9 @@ namespace TestApp.BE
 
         [Alias("Price")]
         public decimal Price { get; set; }
+        
+        [Alias("CustomerId")]
+        public int CustomerId { get; set; }
 
     }
 }

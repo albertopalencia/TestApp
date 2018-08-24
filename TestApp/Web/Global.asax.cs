@@ -16,6 +16,8 @@ namespace TestApp
             var assembly = Assembly.LoadFrom(dir + ConfigurationManager.AppSettings["OrmLiteDLL"]);
             OrmLiteConfig.DialectProvider = assembly.CreateInstance(ConfigurationManager.AppSettings["OrmLiteClass"]) as IOrmLiteDialectProvider;
             OrmLiteConfig.CommandTimeout = 0;
+            System.IO.Directory.CreateDirectory(Server.MapPath("~/Dll"));
+
             RouteConfig.RegisterRoutes(RouteTable.Routes);
         }
     }

@@ -1,54 +1,85 @@
-﻿@model  dynamic
-
-<div class="col-xs-12 widget-container-col ui-sortable">
-    <div class="widget-box ui-sortable-handle">
-        <div class="widget-header">
-            <h5 class="widget-title">Aspirantes</h5>
-            <div class="widget-toolbar">
-                <a href="#" data-action="collapse">
-                    <i class="ace-icon fa fa-chevron-up"></i>
-                </a>
+﻿@model  TestApp.Models.CustomerModel
+<form id="form0" name="form0">
+    <div class="col-xs-12 widget-container-col ui-sortable">
+        <div class="widget-box ui-sortable-handle">
+            <div class="widget-header">
+                <h5 class="widget-title">Aspirantes</h5>
+                <div class="widget-toolbar">
+                    <a href="#" data-action="collapse">
+                        <i class="ace-icon fa fa-chevron-up"></i>
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="widget-body">
-            <div class="widget-main">
-               <div class="row">
-                    <div class="col-xs-2">
-                        <label>Nit:</label>
+            <div class="widget-body">
+                <div class="widget-main">
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <label>Nit:</label>
+                        </div>
+                        <div class="col-xs-4">
+                            @Html.TextBoxFor(model => model.Nit, new { @class = "form-control required onlynumber", @GroupValidation = "Save" })
+                        </div>
+                        <div class="col-xs-2">
+                            <label>First Name:</label>
+                        </div>
+                        <div class="col-xs-4">
+                            @Html.TextBoxFor(model => model.FirstName, new { @class = "form-control required", @GroupValidation = "Save" })
+                        </div>
                     </div>
-                    <div class="col-xs-4">
-                        @Html.TextBoxFor(model => model.Nit, new { @class = "form-control required", @GroupValidation = "Save" })
+                    <div class="space space-2"></div>
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <label>Email:</label>
+                        </div>
+                        <div class="col-xs-4">
+                            @Html.TextBoxFor(model => model.Email, new { @class = "form-control emailCustom required", @GroupValidation = "Save" })
+                        </div>
                     </div>
-                   <div class="col-xs-2">
-                       <label>First Name:</label>
-                   </div>
-                   <div class="col-xs-4">
-                       @Html.TextBoxFor(model => model.FirstName, new { @class = "form-control required", @GroupValidation = "Save" })
-                   </div>
-                </div>
-               <div class="space space-2"></div>
-                <div class="row">
-                    <div class="col-xs-2">
-                        <label>Email:</label>
+                    <div class="space space-2"></div>
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <label>Services:</label>
+                        </div>
+                        <div class="col-xs-4">
+                            @Html.DropDownListFor(model => model.ServiceId, Model.ListServices, "Seleccione", new { @class = "form-control required", @GroupValidation = "Save" })
+                        </div>
+                        <div class="hidden" id="idvcountrie">
+                            <div class="col-xs-2">
+                                <label>Countries:</label>
+                            </div>
+                            <div class="col-xs-4">
+                                @Html.DropDownListFor(model => model.CountrieId, Model.ListCountries, "Seleccione", new { @class = "form-control required", @GroupValidation = "Save" })
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-xs-4">
-                        @Html.TextBoxFor(model => model.Email, new { @class = "form-control emailCustom", @GroupValidation = "Save" })
-                    </div>
-                </div>
-                <div class="space space-2"></div>
-                <div class="row">
-                    <div class="clearfix form-actions center">
-                        <button id="btnguardar" type="button" class="btn btn-primary btn-sm" name="SaveCustomer" GroupValidation="Save">
-                            <i class="ace-icon fa fa-floppy-o"></i>
-                            Save
-                        </button>
-                        <button id="btnCerrarRadicado" type="button" class="btn btn-default btn-sm" data-dismiss="modal">
-                            <i class=" ace-icon fa fa-times"></i>
-                            Cancel
-                        </button>
+                    <div class="space space-2"></div>
+                    <div class="row">
+                        <div class="clearfix form-actions center">
+                            <button id="btnguardar" type="submit" class="btn btn-primary btn-sm" name="SaveCustomer" groupvalidation="Save">
+                                <i class="ace-icon fa fa-floppy-o"></i>
+                                Save
+                            </button>
+                            <button id="btnCerrarRadicado" type="button" class="btn btn-default btn-sm" data-dismiss="modal">
+                                <i class=" ace-icon fa fa-times"></i>
+                                Cancel
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</form>
+@Html.Partial("_Script")
+
+<script type="text/javascript">
+    if (window.jQuery) {
+        $(document).ready(function () {
+            customer.inicio();
+        });
+    } else {
+        window.onload = function () {
+            customer.inicio();
+        }
+    }
+</script>

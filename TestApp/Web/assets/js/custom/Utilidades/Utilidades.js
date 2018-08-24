@@ -239,8 +239,8 @@
 
                 utilidades.RemoverValidador();
 
-                grupo = t.attr("grupovalidacion");
-                $("[grupovalidacion~=" + grupo + "]").not(":submit, :button, a").each(function (i, item) {
+                grupo = t.attr("groupvalidation");
+                $("[groupvalidation~=" + grupo + "]").not(":submit, :button, a").each(function (i, item) {
                     
                     if (!$(item).valid())
                         isValid = false;
@@ -292,8 +292,8 @@
         },
 
         iniciarValidacion: function () {
-            $(':submit[grupovalidacion], a[grupovalidacion]').unbind("click");
-            $(':submit[grupovalidacion], a[grupovalidacion]').click(function (e) {
+            $(':submit[groupvalidation], a[groupvalidation]').unbind("click");
+            $(':submit[groupvalidation], a[groupvalidation]').click(function (e) {
                 if (!utilidades.validar($(this))) {
                     e.preventDefault();
                     return false;
@@ -455,7 +455,7 @@
 		        var elements;
 
 		        if (grupo != undefined) {
-		            elements = $(".has-error").find('input[grupovalidacion~=' + grupo + '], select[grupovalidacion~=' + grupo + '], textarea[grupovalidacion~=' + grupo + ']');
+		            elements = $(".has-error").find('input[groupvalidation~=' + grupo + '], select[groupvalidation~=' + grupo + '], textarea[groupvalidation~=' + grupo + ']');
 		        }
 		        else {
 		            elements = $(".has-error").find('input, select, textarea');

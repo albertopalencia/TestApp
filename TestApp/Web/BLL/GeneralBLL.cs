@@ -8,12 +8,7 @@ namespace TestApp.BLL
 {
     public class GeneralBLL
     {
-        public const string formatoFecha = "mm/dd/yyyy";
-        public const string formatoJquery = "mm/dd/yy";
-        public const string formatoFechaControl = "{0:MM/dd/yyyy}";
-        public const string alfrescoTamanioArchivos = "AlfrescoTamanioArchivos";
-        public const string nombrePrimerElemento = "Seleccione";
-
+        
         public static IEnumerable<SelectListItem> LoadDropDownList<T>(List<T> list, string value, string text)
         {
             var itemList = new SelectList(list, value, text);

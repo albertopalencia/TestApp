@@ -6,6 +6,9 @@ namespace TestApp.Models
 {
     public class CustomerModel : Customer
     {
-        public IEnumerable<SelectListItem> ListCustomer { get; set; }
+        public int ServiceId { get; set; }
+        public int CountrieId { get; set; }
+        public IEnumerable<SelectListItem> ListServices { get; set; }
+        public IEnumerable<SelectListItem> ListCountries { get; set; }
     }
 }

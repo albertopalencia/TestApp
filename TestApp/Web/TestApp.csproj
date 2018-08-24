@@ -55,13 +55,20 @@
       <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="ServiceStack.Common">
-      <HintPath>..\..\..\..\Documents\Test\Dll\ServiceStack.Common.dll</HintPath>
+      <HintPath>..\Dll\ServiceStack.Common.dll</HintPath>
     </Reference>
     <Reference Include="ServiceStack.Interfaces">
-      <HintPath>..\..\..\..\Documents\Test\Dll\ServiceStack.Interfaces.dll</HintPath>
+      <HintPath>..\Dll\ServiceStack.Interfaces.dll</HintPath>
     </Reference>
     <Reference Include="ServiceStack.OrmLite">
-      <HintPath>..\..\..\..\Documents\Test\Dll\ServiceStack.OrmLite.dll</HintPath>
+      <HintPath>..\Dll\ServiceStack.OrmLite.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.OrmLite.SqlServer, Version=5.0.0.0, Culture=neutral, PublicKeyToken=02c12cbda47e6587, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Dll\ServiceStack.OrmLite.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="ServiceStack.Text">
+      <HintPath>..\Dll\ServiceStack.Text.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Caching" />
     <Reference Include="System.Runtime.Serialization" />
@@ -119,6 +126,7 @@
     <Compile Include="BE\Services.cs" />
     <Compile Include="BE\Customer.cs" />
     <Compile Include="BLL\Constantes.cs" />
+    <Compile Include="BLL\CustomerBLL.cs" />
     <Compile Include="BLL\GeneralBLL.cs" />
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -479,6 +487,7 @@
     <Content Include="Views\Querie\Services.cshtml" />
     <Content Include="Views\Querie\Countries.cshtml" />
     <Content Include="Views\Customer\_Customer.cshtml" />
+    <Content Include="Views\Customer\_Script.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -10,13 +10,12 @@ namespace TestApp.BE
         [Alias("ID")]
         public int CountrieId { get; set; }
 
-        [Alias("Nit")]
-        public string Nit { get; set; }
-
         [Alias("Name")]
-        public string FirstName { get; set; }
+        public string Name { get; set; }
 
-        [Alias("Email")]
-        public string Email { get; set; }
+        [Alias("ServiceId")]
+        public int ServiceId { get; set; }
+
+      
     }
 }

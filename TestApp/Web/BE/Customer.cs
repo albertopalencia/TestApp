@@ -2,7 +2,7 @@
 
 namespace TestApp.BE
 {
-    [Alias("Customer")]
+    [Alias("Customers")]
     public class Customer
     {
         [AutoIncrement]
@@ -18,5 +18,6 @@ namespace TestApp.BE
 
         [Alias("Email")]
         public string Email { get; set; }
+
     }
 }

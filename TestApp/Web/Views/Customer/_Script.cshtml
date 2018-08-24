@@ -1,0 +1,83 @@
+﻿
+<script type="text/javascript">
+    (function ($) {
+        var namespace = {
+            inicio: function () {
+
+                utilidades.ValidacionesAdicionales();
+                utilidades.ExtendjQuery();
+                
+                utilidades.validarForm('form0');
+                utilidades.iniciarValidacion();
+
+               $('.emailCustom').validarEmail();
+
+
+               $('#Email').keyup(function (e) {
+                    $(this).validarEmail();
+                });
+
+               $('#Nit').keydown(function (e) {
+                    var code = e.keyCode || e.which;
+                    if (code == 9) {
+                       
+                    }
+                });
+
+               $('#Country').change(function () {
+                    var data = { services: $("#RadicacionWebPqrs_DepartamentoNotificacion").val() };
+                    var actionUrl = '@Url.Action("Index")' + '/' + 'ConsultarMunicipios';
+                    utilidades.CargarComboAjax(actionUrl, '#RadicacionWebPqrs_MunicipioNotificacion', data);
+                });
+                
+                $('.money').autoNumeric('init', { aSep: '.', aDec: ',', mDec: '0', aSign: '$ ' });
+
+                $('#form0').on('submit', function (event) {
+                    $('.money').each(function (index, element) {
+                        $(this).val($(this).val().replace(/\./g, '').replace(/\$/g, '').trim());
+                    });
+                     $('#divProgress').show();
+                });
+
+                $('#form0').keypress(function (e) {
+                    if (e.which == 13) {
+                        e.preventDefault();
+                    }
+                });
+                },
+            MensajeAutorizaEnvioSms: function () {
+
+                var notificacionSms = $('#RadicacionWebPqrs_NotificacionSms');
+
+                bootbox.dialog({
+                    title: 'Informacion',
+                    className: 'text-justify',
+                    size: 'large',
+                    message: 'Señor usuario, AUTORIZA al Sistema de información de gestión de servicio de aseo de Bogotá - SIGAB, para que le sea notificado el estado y seguimiento de sus solicitudes, quejas o reclamos, a través de Mensajes de texto (SMS) al numero de teléfono móvil que registró o registrará en el proceso que adelanta?',
+                    buttons: {
+                        cerrar: {
+                            icon: "ace-icon fa fa-times",
+                            label: "No",
+                            className: "btn-default",
+                            callback: function () {
+                                notificacionSms.prop('checked', false);
+                            }
+                        },
+                        aceptar: {
+                            icon: "ace-icon fa fa-check",
+                            label: "Si",
+                            className: "btn-primary",
+                            callback: function () {
+                                notificacionSms.prop('checked', true);
+                            }
+                        }
+                    }
+                });
+            }
+
+        };
+        window.customer = namespace;
+
+    })(this.jQuery);
+
+</script>
